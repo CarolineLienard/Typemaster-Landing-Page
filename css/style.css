@@ -3,6 +3,117 @@
 @tailwind utilities;
 
 
+/* Colors
+red : #F16718
+blue : #162542
+orange : #FF9B62
+light blue : #7B8BAD
+light grey : #E8EFF2
+white : #FFFFFF
+*/
+
 * {
     font-family: "Barlow Semi Condensed";
+    color: #162542;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #7B8BAD;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 56px;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #7B8BAD;
+}
+
+/* Button */
+.orange-button {
+    background-color:#F16718;
+    padding: 0.7em 1.3em;
+    color: white;
+    border-radius: 8px;
+}
+
+.orange-button:hover {
+    background-color: #FF9B62;
+    cursor: pointer;
+}
+
+.blue-button {
+    background-color: #E8EFF2;
+    padding: 0.7em 1.3em;
+    border-radius: 8px;
+}
+
+.blue-button:hover {
+    background-color: #162542;
+    color: white;
+    cursor: pointer;
+}
+
+/* Main */
+.main-description__button {
+    gap: 2rem;
+}
+
+.main-image {
+    gap: 1.5rem;
+    justify-content: flex-end;
+    margin-right: -10rem;
+}
+
+.main-square {
+    background-color: #E8EFF2;
+    width: 10em;
+    height: 10em;
+    border-radius: 0.75rem;
+}
+
+.second-image {
+    margin-left: -10rem;
+}
+
+.second-key {
+    position: relative;
+}
+
+.overlay {
+    background-color: #F16718;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.7;
+    z-index: 1;
+    filter: saturate(2);
+}
+
+.icon {
+    background-color: #F16718;
+    padding: 20px;
+    border-radius: 16px;
 }
