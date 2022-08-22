@@ -2,16 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* Colors
-red : #F16718
-blue : #162542
-orange : #FF9B62
-light blue : #7B8BAD
-light grey : #E8EFF2
-white : #FFFFFF
-*/
-
+/* General */
 * {
     font-family: "Barlow Semi Condensed";
     color: #162542;
@@ -76,14 +67,20 @@ span {
 }
 
 /* Main */
-.main-description__button {
-    gap: 2rem;
-}
-
 .main-image {
     gap: 1.5rem;
     justify-content: flex-end;
     margin-right: -10rem;
+}
+
+#key-img {
+    background-image: url(../assets/desktop/image-keyboard.jpg);
+    height: 25em;
+    width: 38em;
+}
+
+.second-image {
+    margin-left: -10rem;
 }
 
 .main-square {
@@ -91,14 +88,6 @@ span {
     width: 10em;
     height: 10em;
     border-radius: 0.75rem;
-}
-
-.second-image {
-    margin-left: -10rem;
-}
-
-.second-key {
-    position: relative;
 }
 
 .overlay {
@@ -113,7 +102,116 @@ span {
 }
 
 .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
     background-color: #F16718;
     padding: 20px;
     border-radius: 16px;
+}
+
+.detail-box {
+    display: flex; 
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+
+#phone-img {
+    background-image: url(../assets/desktop/image-phone-and-keyboard.jpg);
+    height: 25em;
+    width: 15em;
+    background-position: center;
+    background-size: cover;
+}
+
+#glass-img {
+    background-image: url(../assets/desktop/image-glass-and-keyboard.jpg);
+    height: 25em;
+    width: 30em;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1190px) {
+    .bot-square {
+        display: none;
+    }
+    
+    .second-main {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 5rem;
+    }
+
+    .second-image {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .second-description {
+        flex-direction: initial;
+        width: 100%;
+        gap: 9rem;
+    }
+
+    #phone-img {
+        height: 22em;
+        width: 15em;
+    }
+    
+    #glass-img {
+        height: 22em;
+        width: 33em;
+    }
+
+    #key-img {
+        width: 30em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main-image {
+        margin-right: -7em;
+    }
+
+    .second-image {
+        margin-left: -6em;
+    }
+
+    #key-img {
+        width: 27em;
+        height: 23em;
+    }
+
+    #glass-img {
+        height: 18em;
+        width: 20em;
+    }
+
+    #phone-img {
+        width: 12em;
+        height: 18em;
+    }
+
+    .second-description {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .detail-box {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .detail-container {
+        padding-top: 4rem;
+    }
 }

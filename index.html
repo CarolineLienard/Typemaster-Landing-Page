@@ -12,103 +12,109 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="flex justify-between py-12 px-28">
+    <header class="flex justify-between px-10 py-12 md:px-20 xl:px-28">
       <div>
         <img src="./assets/shared/logo.svg" alt="">
       </div>
       <button class="blue-button">Pre-order now</button>
     </header>
 
-    <div class="flex overflow-hidden px-28">
+    <div class="flex overflow-hidden gap-16 flex-col items-center px-10 md:gap-20 md:px-20 md:flex-row xl:px-28">
       <div class="main-description flex flex-col gap-7">
-        <h1>Typemaster keyboard</h1>
+        <h1>Typemaster <br>keyboard</h1>
         <p class="w-3/4">Improve your productivity and gaming without breaking the bank. Upgrade to a high quality  mechanical typing experience.</p>
-        <div class="main-description__button flex items-center">
+        <div class="main-description__button flex items-center gap-8">
           <button class="orange-button">Pre-order now</button>
           <p>Release on 5/27</p>
         </div>
       </div>
 
-      <div class="main-image flex">
-        <div class="w-3/5">
-          <img class="w-full rounded-xl" src="./assets/desktop/image-keyboard.jpg" alt="black mechanical keyboard">
+      <div class="main-image w-full flex">
+        <div class="flex rounded-xl bg-center bg-cover" id="key-img">
         </div>
-        <div>
+        <div class="bot-square">
           <div class="main-square"></div>
         </div>
       </div>
     </div>
 
-    <div class="flex items-center py-12 px-28 gap-28">
-      <div class="second-image flex items-end gap-4 w-3/4">
-        <div>
+    <div class="second-main overflow-hidden flex items-center px-10 py-6 md:py-12 md:px-20 xl:px-28 gap-28">
+      <div class="second-image flex items-end gap-4 w-full">
+        <div class="bot-square">
           <div class="main-square">
           </div>
         </div>
 
-        <div class="second-key">
+        <div class="second-key relative">
           <div class="overlay rounded-xl w-full"></div>
-          <img class="rounded-xl w-full" id="phone-img" src="./assets/desktop/image-phone-and-keyboard.jpg" alt="black mechanical keyboard">
+          <div class="back-img rounded-xl w-full" id="phone-img">
+          </div>
         </div>
 
         <div>
-          <img class="rounded-xl w-full" src="./assets/desktop/image-glass-and-keyboard.jpg" alt="black mechanical keyboard">
+          <div class="back-img rounded-xl w-full" id="glass-img">
+          </div>
         </div>
       </div>
 
-      <div class="second-description w-1/5 flex flex-col gap-7">
-        <h2>Mechanical wireless keyboard</h2>
+      <div class="second-description w-full flex flex-col gap-7">
+        <h2>Mechanical <br>wireless<br> keyboard</h2>
         <p>The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety 
         of switches and keycaps, along with reliable wireless connectivity.</p>
       </div>
     </div>
    
-    <div class="flex icons py-28 px-28">
+    <div class="detail-container flex flex-col gap-24 px-10 py-16 md:py-28 md:px-20 xl:px-28 xl:flex-row xl:gap-0">
       
-      <div class="flex flex-col gap-8 w-2/6">
-        <div class="icon flex w-16 h-16 items-center justify-center">
-          <img src="./assets/shared/icon-compatible.svg" alt="">
-        </div>
-        <h3 class="w-2/4">Highly compatible</h3>
-        <p class="w-3/4"> Easy to use and works well with all major computer brands, gaming consoles and mobile devices. 
-            Plug & play, no installation or driver needed.
-        </p>
-      </div>
-
-      <div class="flex flex-col gap-8 w-2/6">
-        <div class="flex icon w-16	h-16 items-center justify-center">
-          <img class="" src="./assets/shared/icon-bluetooth.svg" alt="">
-        </div>
-        <h3 class="w-3/5">Wireless <br>with bluetooth</h3>
-        <p class="w-3/4"> Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away. 
-            Simply plug the unifying receiver into your computer.
-        </p>
-      </div>
-
-      <div class="flex flex-col gap-8 w-2/6">
-        <div class="flex icon w-16	h-16 items-center justify-center">
-          <img class="" src="./assets/shared/icon-battery.svg" alt="">
-        </div>
-        <h3 class="w-2/4">High capacity battery</h3>
-        <p class="w-3/4">
-          Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones. 
-          Enjoy 40 hours of usage time between charges.
-        </p>
-      </div>
-
-      <div class="flex flex-col gap-8 w-2/6">
-        <div class="flex icon w-16	h-16 items-center justify-center">
-          <img class="" src="./assets/shared/icon-light.svg" alt="">
-        </div>
-          <h3 class="w-2/4">RGB backlit modes</h3>
-          <p class="w-3/4">
-            Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark and helps
-            you type in low light conditions.
+      <div class="flex w-full flex-col gap-20 sm:flex-row sm:gap-0">
+        <div class="detail-box">
+          <div class="icon">
+            <img src="./assets/shared/icon-compatible.svg" alt="">
+          </div>
+          <h3 class="w-2/4 lg:w-48">Highly compatible</h3>
+          <p class="w-3/4"> Easy to use and works well with all major computer brands, gaming consoles and mobile devices. 
+              Plug & play, no installation or driver needed.
           </p>
+        </div>
+
+        <div class="detail-box">
+          <div class="icon">
+            <img class="" src="./assets/shared/icon-bluetooth.svg" alt="">
+          </div>
+          <h3 class="w-48">Wireless <br>with bluetooth</h3>
+          <p class="w-3/4"> Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away. 
+              Simply plug the unifying receiver into your computer.
+          </p>
+        </div>
+      </div>  
+      
+      <div class="w-full flex gap-20 flex-col sm:flex-row sm:gap-0">
+        <div class="detail-box">
+          <div class="icon">
+            <img class="" src="./assets/shared/icon-battery.svg" alt="">
+          </div>
+          <h3 class="w-2/4 lg: w-48">High capacity battery</h3>
+          <p class="w-3/4">
+            Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones. 
+            Enjoy 40 hours of usage time between charges.
+          </p>
+        </div>
+
+        <div class="detail-box">
+          <div class="icon">
+            <img class="" src="./assets/shared/icon-light.svg" alt="">
+          </div>
+            <h3 class="w-2/4 lg: w-48">RGB backlit modes</h3>
+            <p class="w-3/4">
+              Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark and helps
+              you type in low light conditions.
+            </p>
+        </div>
       </div>
+
     </div>
 
-    <footer class="flex justify-center py-6">
+    <footer class="flex justify-center pt-24 pb-4 md:py-6">
       <p><span>Typemaster 2021</span> | All Rights Reserved</p>
     </footer>
   </body>
