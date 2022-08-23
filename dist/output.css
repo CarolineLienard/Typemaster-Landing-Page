@@ -639,6 +639,11 @@ video {
   border-radius: 0.75rem;
 }
 
+.bg-orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 103 24 / var(--tw-bg-opacity));
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -737,16 +742,10 @@ span {
   cursor: pointer;
 }
 
-/* Main */
+/* Main class */
 
 .main-image {
   margin-right: -10rem;
-}
-
-#key-img {
-  background-image: url(../assets/desktop/image-keyboard.jpg);
-  height: 25em;
-  width: 38em;
 }
 
 .second-image {
@@ -761,14 +760,11 @@ span {
 }
 
 .overlay {
-  background-color: #F16718;
   height: 100%;
   position: absolute;
   top: 0;
   right: 0;
   opacity: 0.7;
-  z-index: 1;
-  filter: saturate(2);
 }
 
 .icon {
@@ -789,6 +785,14 @@ span {
   width: 50%;
 }
 
+/* Image */
+
+#key-img {
+  background-image: url(../assets/desktop/image-keyboard.jpg);
+  height: 25em;
+  width: 38em;
+}
+
 #phone-img {
   background-image: url(../assets/desktop/image-phone-and-keyboard.jpg);
   height: 25em;
@@ -804,6 +808,10 @@ span {
   background-position: center;
   background-size: cover;
 }
+
+/* Responsive */
+
+/* Desktop */
 
 @media screen and (max-width: 1190px) {
   .bot-square {
@@ -843,6 +851,8 @@ span {
   }
 }
 
+/* Small device */
+
 @media screen and (max-width: 750px) {
   .main-image {
     margin-right: -7em;
@@ -850,21 +860,6 @@ span {
 
   .second-image {
     margin-left: -6em;
-  }
-
-  #key-img {
-    width: 40em;
-    height: 18em;
-  }
-
-  #glass-img {
-    height: 18em;
-    width: 23em;
-  }
-
-  #phone-img {
-    width: 12em;
-    height: 18em;
   }
 
   .second-description {
@@ -885,7 +880,24 @@ span {
   .detail-container {
     padding-top: 4rem;
   }
+
+  #key-img {
+    width: 40em;
+    height: 18em;
+  }
+
+  #glass-img {
+    height: 18em;
+    width: 23em;
+  }
+
+  #phone-img {
+    width: 12em;
+    height: 18em;
+  }
 }
+
+/* Mobile */
 
 @media screen and (max-width: 450px) {
   #glass-img {
